@@ -1,0 +1,278 @@
+/*==== Base Element Styles ====*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(250, 250, 250);
+    font-family: 'Hind', sans-serif;
+    line-height: 1.6;
+    color: darkgrey;
+}
+
+a  {
+    color: darkgray;
+    font-family: 'Hind', sans-serif;
+    text-decoration: none;
+}
+
+h1 {
+    margin-top: 0;
+    font-family: 'Abel', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Abel', sans-serif;
+    color: darkgrey;
+}
+
+p  {
+    font-family: 'Hind', sans-serif;
+    color: darkgrey;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px; 
+}
+
+img {
+    max-width: 100%;
+}
+
+/*==== Navigation Styles ====*/
+
+.name,
+.main-nav li {
+    background-color: rgb(250, 250, 250);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.main-nav {
+    margin-top: 10px;
+    font-family: 'Abel', sans-serif;
+}
+
+.name a {
+    text-align: center;
+    display: block;
+    padding: 10px; 
+}
+
+.main-nav :hover {
+    color: red;
+}
+
+.name a
+.main-nav a {
+    padding: 15px;
+    display: block;
+}
+
+.image {
+    width: 100%;
+    padding: 10px;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.feat-img {
+    display: block;
+    margin: 0 auto;
+}
+
+.primary,
+.secondary, 
+.tertiary {
+    padding-top: 10px;
+}
+
+.main-footer {
+    display: block;
+    margin: 0 auto;
+}
+
+.bio {
+    font-size: 20px;
+    text-align: justify;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.portfolio {
+    font-size: 35px;
+    color: darkgrey;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+    padding-top: 40px;
+    width: 100%;
+    text-decoration: underline;
+}
+
+.main {
+    padding-top: 10px;
+}
+
+.main-footer,
+.main-nav {
+    display: none;
+}
+
+
+/*==== Layout Containers ====*/ 
+
+.main-header {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.col {
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.main-footer {
+    background-color: rgb(250, 250, 250);
+    margin-top: 30px;
+}
+
+.main-footer-p {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
+.main-footer,
+.main-nav {
+    display: none;
+}
+
+.natasha {
+    padding-bottom: 25px;
+    float: left;
+    padding-left: 20px;
+}
+
+.back {
+    float: right;
+    padding-right: 20px;
+
+}
+
+/*==== Media Queries ====*/
+
+@media (min-width: 768px) {
+    .back {
+        display: none;
+    }
+    .natasha {
+        float: left;
+        line-height: 3;
+        padding: 0;
+        margin: 0;
+    }
+    footer .main-nav {
+        float: right;
+        padding: 0;
+        margin: 0;
+    }
+    .container {
+        width: 90%;
+    }
+    .bio {
+        max-width: 60%;
+        float: left;
+    }
+    .feat-img {
+        float: right;
+        max-width: 40%;
+        margin: 0 auto;
+    }
+
+    .col {
+        float: left;
+    }
+    .bio {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .primary,
+    .secondary,
+    .tertiary {
+        width: 50%;
+    }
+    .main-nav {
+        display:block;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .bottom-nav {
+        float: right;
+    }
+    .main-nav li {
+        display: inline-block;
+        margin-left: 15px;
+    }
+    .main-footer {
+        display:block;
+        float: right;
+        margin: 5px auto;
+    }
+  
+    .main-footer,
+    .main-nav {
+        display: inline-block;
+    }
+
+}
+
+   @media (min-width: 1024px) {
+       .container {
+           width:80%;
+           max-width: 1250px;
+       }
+       .primary,
+       .secondary,
+       .tertiary {
+           width:33.3%;
+       }
+       .name,
+       .main-nav {
+           display: block;
+       }
+       .main-nav {
+           float:right;
+       }
+       .main-footer {
+           display:block;
+           width: 100%;
+       }
+       .main-footer-p {
+           width: 60%;
+           margin: 0 auto;
+       }
+
+       .main-footer,
+       .main-nav {
+           display: inline-block;
+       }
+       .natasha {
+           display: inline-block;
+       }
+   }
+
+   /*==== Clearfix ====*/
+
+   .clearfix {
+        content:"";
+        display:table;
+        clear: both;
+   }
