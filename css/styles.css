@@ -41,14 +41,41 @@ img {
     max-width: 100%;
 }
 
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+nav, 
+footer {
+    margin: 25px auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 /*==== Navigation Styles ====*/
 
 .name,
 .main-nav li {
-    background-color: rgb(250, 250, 250);
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.name {
+    background-color: rgb(250,250,250);
+}
+
+.main-nav li {
+   background-color: darkgrey;
+   padding: 10px 0;
+}
+
+.main-nav a {
+    color: rgb(250, 250, 250);
 }
 
 .main-nav {
@@ -104,24 +131,18 @@ img {
     margin: 0 auto;
 }
 
-.portfolio {
-    font-size: 35px;
+main {
+
     color: darkgrey;
     text-align: center;
     display: inline-block;
     font-weight: bold;
     padding-top: 40px;
     width: 100%;
-    text-decoration: underline;
 }
 
 .main {
     padding-top: 10px;
-}
-
-.main-footer,
-.main-nav {
-    display: none;
 }
 
 
@@ -150,47 +171,59 @@ img {
     padding-top: 20px;
 }
 
-.main-footer,
-.main-nav {
-    display: none;
+.footer-nav {
+    text-align: right;
 }
 
 .natasha {
-    padding-bottom: 25px;
     float: left;
-    padding-left: 20px;
+    padding: 0;
+    hight: 12px;
+    line-height:12px;
 }
 
-.back {
-    float: right;
-    padding-right: 20px;
+.footer-nav .back {
+    display:inline-block;
+    line-height: 3.55;
 
+}
+
+.full {
+    display:none;
 }
 
 /*==== Media Queries ====*/
 
-@media (min-width: 320px) {
-    .back {
+@media (min-width: 768px) {
+    p {
+        padding: 0;
+        margin: 0;
+        line-height: 1.25;
+    }
+
+    .footer-nav .back {
         display: none;
     }
-    .natasha {
-        float: left;
-        line-height: 3;
-        padding: 0;
-        margin: 0;
+   
+    .full {
+        display: inline-block;
+        line-height: 3.55;
+        margin-left: 10px;
     }
-    footer .main-nav {
-        float: left;
-        padding: 0;
-        margin: 0;
+
+    .main-nav li {
+        background-color: transparent;
     }
-    .container {
-        width: 90%;
+
+    .main-nav a {
+        color: darkgrey;
     }
+
     .bio {
         max-width: 60%;
         float: left;
     }
+
     .feat-img {
         float: right;
         max-width: 40%;
@@ -200,69 +233,76 @@ img {
     .col {
         float: left;
     }
+    .col h2 {
+        line-height: 1.5;
+        padding-top: 0;
+    }
+
     .bio {
         padding-left: 20px;
         padding-right: 20px;
     }
+
     .primary,
     .secondary,
     .tertiary {
         width: 50%;
+        min-height: 425px;
+        padding-top: 0;
     }
+
     .main-nav {
         display:block;
         text-align: center;
         padding-bottom: 10px;
     }
+
     .bottom-nav {
         float: right;
     }
+
     .main-nav li {
         display: inline-block;
         margin-left: 15px;
     }
+
     .main-footer {
-        display:block;
-        float: right;
-        margin: 5px auto;
+       width: 100%;
     }
   
-  
-
 }
 
    @media (min-width: 1024px) {
        .container {
-           width:80%;
-           max-width: 1250px;
+          margin-top: 30px;
        }
+
        .primary,
        .secondary,
        .tertiary {
            width:33.3%;
        }
-       .name,
-       .main-nav {
-           display: block;
-       }
-       .main-nav {
-           float:right;
-       }
-       .main-footer {
-           display:block;
+
+       .main-header {
            width: 100%;
-       }
-       .main-footer-p {
-           width: 60%;
-           margin: 0 auto;
+           padding: 0;
        }
 
-       .main-footer,
-       .main-nav {
-           display: inline-block;
+       .name {
+           float: left;
+           padding: 0;
+           height: 12px;
+           line-height: 12px;
        }
-       .natasha {
-           display: inline-block;
+
+       .main-nav li {
+            display: inline-block;
+            text-align: right;
+            line-height: 0;
+       }
+
+       .main-nav {
+           text-align: right;
        }
    }
 
