@@ -169,7 +169,7 @@ img {
 
 /*==== Media Queries ====*/
 
-@media (min-width: 768px) {
+@media (min-width: 320px) {
     .back {
         display: none;
     }
